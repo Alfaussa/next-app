@@ -1,4 +1,14 @@
+import data from './data'
+
 export default function Test() {
-	let name = 'user';
-	return <h1>hello, {name}!</h1>;
+	
+	let list = data.map(function(item){
+		return  <li>{item}</li>
+	})
+return <>
+<h1>Test</h1>
+<ul>
+	{list}
+</ul>
+</>
 }
