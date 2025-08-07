@@ -1,8 +1,8 @@
-import data from './data'
+import posts from './data'
 
 export default function Test() {
 	
-	let list = data.map(function(item){
+	let list = posts.map(function(item){
 		return  <li>{item}</li>
 	})
 return <>

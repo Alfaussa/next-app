@@ -5,3 +5,4 @@ let posts = [
 	'post4',
 	'post5',
 ];
+export default posts;
