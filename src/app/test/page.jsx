@@ -1,14 +1,31 @@
-import posts from './data'
+import prods from './data'
 
 export default function Test() {
 	
-	let list = posts.map(function(item){
-		return  <li>{item}</li>
-	})
-return <>
-<h1>Test</h1>
-<ul>
-	{list}
-</ul>
-</>
-}
+
+		return  <>
+		<table border="1" cellPadding="8">
+			  <thead>
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>cost</th>
+		</tr>
+		</thead>
+		  <tbody>
+    
+		{prods.map((prod)=>(
+			<tr key = {prod.id}>
+<td>{prod.id}</td>
+<td>{prod.name}</td>
+		 <td>{prod.cost}</td>
+		   </tr>
+		))}
+		
+		 
+		
+  
+  </tbody>
+		</table>
+		</>
+	}
