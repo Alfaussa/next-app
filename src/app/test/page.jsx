@@ -1,4 +1,5 @@
-import prods from './data'
+import prods from '@/prods.js'
+
 
 export default function Test() {
 	
