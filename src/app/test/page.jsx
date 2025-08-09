@@ -1,10 +1,12 @@
-import prods from '@/prods.js'
+import prods from '../prods'
+import Product from '@/comp/product/Product'
 
 
 export default function Test() {
 	
 
 		return  <>
+		<Product name='alfa' cost='500' />
 		<table border="1" cellPadding="8">
 			  <thead>
 		<tr>
