@@ -1,6 +1,10 @@
 import prods from '../prods'
 import Product from '@/comp/product/Product'
 
+export const metadata = {
+	title: 'My Test page',
+	description: 'Description for test page.',
+}
 
 export default function Test() {
 	
