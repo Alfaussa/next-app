@@ -5,11 +5,11 @@ export const metadata = {
 	description: 'This is my page description.', 
 };
 
-export default function RootLayout({children}) {
+export default function RootLayout({children, info}) {
 	return (
 		<html lang="en">
 			<body>
-				<header><Header/></header>
+				<header><div>{info}</div></header>
 		<main>
 					{children}
 				<aside>aside-left</aside>
