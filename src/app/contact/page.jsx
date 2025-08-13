@@ -6,10 +6,6 @@ title:'Contacts are here',
 description:'description for contats page'
 }
 
-const Contact = () => {
-  return (
-    <div>my Contacts</div>
-  )
+export default function Contact() {
+  return <div>My Contacts</div>;
 }
-
-export default Contact
