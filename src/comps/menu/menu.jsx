@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Menu() {
 		return <>
-		<a href="/">home</a>
-		<a href="/about">about</a>
-		<a href="/price">price</a>
-		<a href="/contacts">contacts</a>
+		<Link href="/">home</Link>
+		<Link href="/about">about</Link>
+		<Link href="/price">price</Link>
+		<Link href="/contacts">contats</Link>
 	</>;
 }
