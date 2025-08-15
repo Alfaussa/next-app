@@ -1,7 +1,7 @@
 import Header from "@/comp/header/header";
 import Footer from "@/comp/footer/footer";
 import Menu from "@/comps/menu/menu";
-
+import '@/app/globals.css';
 export const metadata = {
 	title: 'Test siite',
 	description: 'This is my page description.', 
