@@ -11,10 +11,13 @@ const Item = ({params}) => {
 
     
   return (<>
-    <div>{res.name}</div>
-    <div>{res.price}</div>
-    <div>{res.image}</div>
-    <div>{res.description}</div>
+  <div className='m-5'>
+    <h2 className='font-black mb-3'>{res.name}</h2>
+    <p className='font-bold mb-3'>Цена: {res.price}</p>
+    <div className='flex'>
+    <img className="size-70 shadow-xl rounded-md mr-5"src={res.image}></img>
+    <p>{res.description}</p></div>
+    </div>
 </>
   )
 }

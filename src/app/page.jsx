@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Home() {
 
  const list = products.map((product) =>(
-<div className="flex w-50 h-100% border rounded-lg">
+<div className="flex w-55 h-100% border rounded-lg m-5">
   <li className="p-5" key={product.id}>
   <Link href={`/goods/${product.id}`}>
   
   <h2 className="font-black text-center">{product.name}</h2>
-  <p  className="mt-2 mb-2  ">Цена: {product.price}</p>
+  <p  className="mt-2 mb-2  ">Цена: ${product.price}</p>
   <img className="size-50 shadow-xl rounded-md"src={product.image}></img>
   
   </Link>
