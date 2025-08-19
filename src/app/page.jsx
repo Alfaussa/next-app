@@ -1,32 +1,22 @@
 
-import products from "./goods/goodsData"
+import countries from "./countries/countries"
 import Link from "next/link";
 
 
 export default function Home() {
 
- const list = products.map((product) =>(
-<div className="flex w-55 h-100% border rounded-lg m-5">
-  <li className="p-5" key={product.id}>
-  <Link href={`/goods/${product.id}`}>
-  
-  <h2 className="font-black text-center">{product.name}</h2>
-  <p  className="mt-2 mb-2  ">Цена: ${product.price}</p>
-  <img className="size-50 shadow-xl rounded-md"src={product.image}></img>
-  
-  </Link>
-  </li>
-</div>
- ))
-  
+  const list = countries.map((country) =>{
+    return <>
+    <li key={country.id}>
+      <Link href={`/countries/${country.id}`}>{country.name}</Link>
+    </li>
+    </>
+  })
 
   return (<>
-
-<div className="flex " >
-  <ul className="flex gap-4 flex-wrap ">{list}</ul>
-
-  </div>
-
+  <div>
+  <ul>{list}</ul>
+</div>
 </>
   )
 }
