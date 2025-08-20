@@ -15,7 +15,7 @@ const cityList = choosenCountry.cities.map((city)=>{
     return(
 
     <li key={city.id}> 
-      <Link href={`/${city.id}`}> {city.name}  </Link>
+      <Link href={`./cities/${city.id}`}> {city.name}  </Link>
         </li>
    )
 
@@ -25,6 +25,7 @@ const cityList = choosenCountry.cities.map((city)=>{
 
   return (<>
     <div>{choosenCountry.name}</div>
+       <div>{choosenCountry.description}</div>
     <div><ul>{cityList}</ul></div>
   </>)
 }
