@@ -1,13 +1,14 @@
 import prods from "../prods"
+import Link from "next/link"
 
 const List = () => {
 
     let list = prods.map((prod) =>(
-        <ul>{prod.name}</ul>
+        <div>{prod.name}</div>
     ))
 
   return (
-    <div>{list}</div>
+    <Link href={'../prods/'}>{list}</Link>
   )
 }
 
